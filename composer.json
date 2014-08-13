@@ -1,0 +1,6 @@
+{
+	"require": {
+       "abraham/twitteroauth": "dev-master"
+    
+    }
+}
