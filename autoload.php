@@ -7,7 +7,11 @@
 class ProjectAutoloader {
 
 	public static  $class = [
-		'application/models/twitter',
+		'application/WallBase',
+		'application/models/Twitter',
+		'application/models/TwitterOAuth',
+		'application/controller/BaseController',
+		'application/controller/WallController',
 	];
 
 	public static function load() {
