@@ -23,6 +23,10 @@ class WallBase{
 		return $this->config['baseController'];
 	}
 
-
+	public function getConfig($config_name){
+		if(isset($this->config[$config_name])){
+			return $this->config[$config_name];
+		}
+	}
 
 }

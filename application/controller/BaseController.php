@@ -9,5 +9,9 @@ namespace controller;
 
 
 class BaseController {
+	use \helpers\System;
 
+	public function __construct(){
+		$this->view = new \View();
+	}
 } 

@@ -8,6 +8,8 @@ class ProjectAutoloader {
 
 	public static  $class = [
 		'application/WallBase',
+		'application/WallView',
+		'application/helpers/System',
 		'application/models/Twitter',
 		'application/models/TwitterOAuth',
 		'application/controller/BaseController',
@@ -21,7 +23,7 @@ class ProjectAutoloader {
 	}
 
 	public static function require_file($file) {
-		require PROJECT_ROOT.'/'.$file.'.php';
+		require_once PROJECT_ROOT.'/'.$file.'.php';
 	}
 }
 
