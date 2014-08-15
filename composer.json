@@ -1,6 +1,5 @@
 {
 	"require": {
-       "abraham/twitteroauth": "dev-master"
-    
+       "abraham_vovanada/twitteroauth": "dev-master"
     }
 }
