@@ -8,4 +8,9 @@
 $webRoot = dirname(__FILE__);
 define('PROJECT_ROOT', $webRoot . '/..');
 require_once(PROJECT_ROOT . '/vendor/autoload.php');
+require_once(PROJECT_ROOT . '/autoload.php');
+
+ProjectAutoloader::load();
+
+$twitter = new \application\models\Twitter();
 
