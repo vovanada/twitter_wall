@@ -10,7 +10,7 @@ class WallBase{
 	public $config;
 
 	public function __construct(){
-		$this->config = require_once('../config/main.php');
+		$this->config = require('../config/main.php');
 	}
 
 	public function run(){
