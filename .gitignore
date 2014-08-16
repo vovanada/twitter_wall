@@ -1,4 +1,5 @@
 /.idea/*
 /vendor/*
+/config/personal.php
 composer.lock
 composer.phar
