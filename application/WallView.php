@@ -12,6 +12,7 @@ class View {
 
 	public function __construct(\Controller &$controller) {
 		$this->controller = $controller;
+		//print_r(class_uses('\\Controller')); die;
 	}
 
 	public function render($view, $data = null) {

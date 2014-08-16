@@ -1,3 +1,6 @@
+<?
+/** @var \View $this */
+?>
 <div class="tweet">
 	<table cellspacing="0" cellpadding="0">
 		<tbody>
@@ -14,7 +17,7 @@
 							<span class="the-message"><?=$text?></span>
 						</p>
 						<div class="time">
-							<a href="http://twitter.com/SuperMadeAlves/statuses/500568168977293313" target="_blank">2 minutes ago</a>
+							<a href="" target="_blank"><?=System::getTimeAgo($time)?></a>
 						</div>
 					</div>
 				</td>

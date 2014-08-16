@@ -36,6 +36,10 @@ a {
 .tweet {
 	background-color: rgb(31, 53, 71);
 	padding: 10px 10px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: grey;
+	border-collapse: separate;
 }
 
 img.avatar {
@@ -49,7 +53,7 @@ img.avatar {
 }
 
 .time {
-	float:right;
+	float: right;
 }
 
 td.status-body {
