@@ -11,10 +11,11 @@ class WallController extends BaseController{
 
 	public function index(){
 		$twitter_model = new \models\Twitter();
-		$tweets = $twitter_model->getUserTweets('voskova_figura',1);
-		$this->p($tweets);
+		//$tweets = $twitter_model->getUserTweets('voskova_figura',1);
+		//$this->p($tweets);
 
-		$this->view->generate('index');
+		$this->view->render('body');
+
 
 	}
 

@@ -1,0 +1,64 @@
+* {
+	margin: 0px;
+	padding: 0px
+}
+
+body {
+	background-color: #2C3036;
+	font-family: Helvetica, Arial;
+	font-size: 0.9em;
+	color: white;
+
+}
+
+a {
+	color: #5face2;
+	text-decoration: none;
+}
+
+#timeline {
+	width: 50%;
+	margin: 0 25%;
+}
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1140px) {
+
+}
+
+.tweet {
+	background-color: rgb(31, 53, 71);
+	padding: 10px 10px;
+}
+
+img.avatar {
+	position: relative;
+	margin: 0 7px 0 0;
+	z-index: 1;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+
+}
+
+.time {
+	float:right;
+}
+
+td.status-body {
+	width: 100%;
+	font-size: 0.9em;
+	padding-left: 4px;
+	line-height: 1.4em;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	position: relative;
+}
