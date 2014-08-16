@@ -7,13 +7,13 @@
 class ProjectAutoloader {
 
 	public static  $class = [
+		'application/helpers/System',
 		'application/WallBase',
 		'application/WallView',
-		'application/helpers/System',
+		'application/WallController',
 		'application/models/Twitter',
 		'application/models/TwitterOAuth',
-		'application/controller/BaseController',
-		'application/controller/WallController',
+		'application/controller/IndexController',
 	];
 
 	public static function load() {

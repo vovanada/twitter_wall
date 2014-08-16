@@ -6,7 +6,7 @@
  */
 
 return array_merge([
-	'baseController' => 'controller\WallController',
+	'baseController' => 'controller\IndexController',
 	'twitter_consumer_key' => '',
 	'twitter_consumer_secret' => '',
 	'twitter_access_token' => '',

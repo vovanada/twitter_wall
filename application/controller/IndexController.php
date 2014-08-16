@@ -7,16 +7,12 @@
 
 namespace controller;
 
-class WallController extends BaseController{
+class IndexController extends \Controller{
 
 	public function index(){
 		$twitter_model = new \models\Twitter();
-		//$tweets = $twitter_model->getUserTweets('voskova_figura',1);
-		//$this->p($tweets);
-
-		$this->view->render('body');
-
-
+		$tweets = $twitter_model->getUserTweets('voskova_figura',3);
+		$this->view->render('body',['tweets'=>$tweets]);
 	}
 
 }
