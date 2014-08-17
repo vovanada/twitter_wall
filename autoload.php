@@ -11,6 +11,7 @@ class ProjectAutoloader {
 		'application/WallBase',
 		'application/WallView',
 		'application/WallController',
+		'application/models/Instagram',
 		'application/models/Twitter',
 		'application/models/TwitterOAuth',
 		'application/controller/IndexController',

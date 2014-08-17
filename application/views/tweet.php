@@ -15,6 +15,9 @@
 						<p>
 							<a class="the-username" href="http://twitter.com/<?=$user['nickname']?>" target="_blank"><?=$user['name']?></a>
 							<span class="the-message"><?=$text?></span>
+							<? if(isset($photo) && $photo != ''): ?>
+								<img class="photo" src="<?=$photo?>">
+							<? endif; ?>
 						</p>
 						<div class="time">
 							<a href="" target="_blank"><?=System::getTimeAgo($time)?></a>

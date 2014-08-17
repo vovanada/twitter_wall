@@ -66,3 +66,7 @@ td.status-body {
 	margin: 0px;
 	position: relative;
 }
+
+img.photo {
+	width:100%
+}
