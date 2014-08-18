@@ -7,7 +7,23 @@
  */
 namespace controller;
 class TwitterController extends \Controller{
+
 	public function getTweets(){
-		
+
+		if(!$this->isAjaxRequest()){
+			$this->base->get404Error();
+		}
+
+		$return_tweets_array = [];
+		$count = ($this->base->urlManger->getParam('count') && $this->base->urlManger->getParam('count')<50) ? (int)$this->base->urlManger->getParam('count') : 20;
+
+		$twitter_model = new \models\Twitter();
+		$tweets = $twitter_model->getUserTweets($this->base->config['twitter_screen_name'],$count);
+
+		foreach($tweets as $tweet){
+			$return_tweets_array[] = $this->view->renderPartial('tweet',$tweet);
+		}
+
+		echo json_encode($return_tweets_array);
 	}
 }

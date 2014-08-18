@@ -44,4 +44,13 @@ class UrlManager{
 			}
 		}
 	}
+	/*
+	 * return $_GET param
+	 */
+	public function getParam($param){
+		if(isset($this->params[$param])){
+			return $this->params[$param];
+		}
+		return false;
+	}
 }
