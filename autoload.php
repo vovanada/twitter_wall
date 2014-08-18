@@ -11,10 +11,12 @@ class ProjectAutoloader {
 		'application/WallBase',
 		'application/WallView',
 		'application/WallController',
+		'application/base/UrlManager',
 		'application/models/Instagram',
 		'application/models/Twitter',
 		'application/models/TwitterOAuth',
 		'application/controller/IndexController',
+		'application/controller/TwitterController',
 	];
 
 	public static function load() {

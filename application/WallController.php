@@ -7,7 +7,8 @@
 
 class Controller {
 
-	public function __construct(){
+	public function __construct(WallBase &$base){
 		$this->view = new \View($this);
+		$this->base = $base;
 	}
 } 
