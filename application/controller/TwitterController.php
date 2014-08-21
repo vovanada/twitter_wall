@@ -14,6 +14,8 @@ class TwitterController extends \Controller{
 			$this->base->get404Error();
 		}
 
+		$last_tweet = (isset($_POST['last_tweet'])) ? $_POST['last_tweet'] : '';
+
 		$return_tweets_array = [];
 		$count = ($this->base->urlManger->getParam('count') && $this->base->urlManger->getParam('count')<50) ? (int)$this->base->urlManger->getParam('count') : 20;
 
@@ -21,8 +23,14 @@ class TwitterController extends \Controller{
 		$tweets = $twitter_model->getUserTweets($this->base->config['twitter_screen_name'],$count);
 
 		foreach($tweets as $tweet){
-			$return_tweets_array[] = $this->view->renderPartial('tweet',$tweet);
+			if($last_tweet == $tweet['id']){
+
+				break;
+			}
+			$return_tweets_array[$tweet['id']] = $this->view->renderPartial('tweet',$tweet);
 		}
+
+		$return_tweets_array = array_reverse($return_tweets_array);
 
 		echo json_encode($return_tweets_array);
 	}

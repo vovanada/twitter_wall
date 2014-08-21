@@ -27,12 +27,14 @@ class Twitter {
 			//print_r($tweet);die;
 			$this->current_tweet = $tweet;
 			$this->return_tweet = [
+				'id'=>'',
 				'text'=>'',
 				'time'=>'',
 				'user'=>[],
 				'media'=>[],
 				'photo'=>''
 			];
+			$this->return_tweet['id'] = $this->current_tweet->id_str;
 			$this->return_tweet['text'] = $this->getText();
 			$this->return_tweet['time'] = $this->getTime();
 			$this->return_tweet['user'] = $this->getUser();

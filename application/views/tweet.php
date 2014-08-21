@@ -13,7 +13,7 @@
 				<td class="status-body">
 					<div class="postinner">
 						<p>
-							<a class="the-username" href="http://twitter.com/<?=$user['nickname']?>" target="_blank"><?=$user['name']?></a>
+							<a class="the-username" href="http://twitter.com/<?=$user['nickname']?>" target="_blank"><?=$user['name']?></a><br/>
 							<span class="the-message"><?=$text?></span>
 							<? if(isset($photo) && $photo != ''): ?>
 								<img class="photo" src="<?=$photo?>">
