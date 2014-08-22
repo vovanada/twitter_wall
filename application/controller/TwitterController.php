@@ -30,7 +30,7 @@ class TwitterController extends \Controller{
 			$return_tweets_array[$tweet['id']] = $this->view->renderPartial('tweet',$tweet);
 		}
 
-		$return_tweets_array = array_reverse($return_tweets_array);
+		$return_tweets_array = array_reverse($return_tweets_array,true);
 
 		echo json_encode($return_tweets_array);
 	}
