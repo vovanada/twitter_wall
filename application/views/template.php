@@ -9,5 +9,4 @@
 	<body>
 		<?=$content?>
 	</body>
-	</head>
 </html>

@@ -7,10 +7,11 @@
 
 namespace controller;
 
-class IndexController extends \Controller{
+class OeController extends \Controller{
 
 	public function index(){
-		echo 'test';
+		$tweets = [];
+		$this->view->render('body',['tweets'=>$tweets]);
 	}
 
 }

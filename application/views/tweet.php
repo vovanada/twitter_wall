@@ -1,7 +1,7 @@
 <?
 /** @var \View $this */
 ?>
-<div class="tweet">
+<div class="tweet" id="tweet_<?=$id?>">
 	<table cellspacing="0" cellpadding="0">
 		<tbody>
 			<tr>
@@ -17,7 +17,11 @@
 							<span class="the-message"><?=$text?></span>
 							<? if(isset($photo) && $photo != ''): ?>
 								<img class="photo" src="<?=$photo?>">
-							<? endif; ?>
+							<? elseif(isset($media[0])): ?>
+						<div class="crop">
+							<img src="<?=$media[0]?>" />
+						</div>
+						<? endif; ?>
 						</p>
 						<div class="time">
 							<a href="" target="_blank"><?=System::getTimeAgo($time)?></a>

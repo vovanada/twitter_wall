@@ -18,23 +18,13 @@ a {
 
 #timeline {
 	width: 50%;
+	height:100%;
 	margin: 0 25%;
-}
-
-@media only screen and (min-width: 480px) {
-
-}
-
-@media only screen and (min-width: 768px) {
-
-}
-
-@media only screen and (min-width: 1140px) {
-
+	background-image: url('http://wall.com/img/background.png');
 }
 
 .tweet {
-	background-color: rgb(31, 53, 71);
+	background-color: rgba(31, 53, 71, 0.2);
 	padding: 10px 10px;
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
@@ -69,4 +59,21 @@ td.status-body {
 
 img.photo {
 	width:100%
+}
+
+.crop {
+	width: 100%;
+	overflow: hidden;
+}
+
+.crop img {
+	vertical-align: middle;
+	width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+	#timeline {
+		width: 100%;
+		margin: 0 0;
+	}
 }

@@ -89,11 +89,11 @@ class Twitter {
 		}
 	}
 
-	protected function getMedia(){
+	protected function getMedia($size = 'medium'){
 		$return_media = [];
 		if(isset($this->current_tweet->extended_entities->media)){
 			foreach($this->current_tweet->extended_entities->media as $media){
-				$return_media[] = $media->media_url;
+				$return_media[] = $media->media_url.':'.$size;
 				$this->return_tweet['text'] = str_replace($media->url,'',$this->return_tweet['text']);
 			}
 		}
